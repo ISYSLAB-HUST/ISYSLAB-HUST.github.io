@@ -1,86 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ISYSLAB-HUST Projects</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-        }
-        .project {
-            margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .project-title {
-            font-size: 24px;
-            margin-bottom: 5px;
-        }
-        .project-info {
-            margin-bottom: 10px;
-            font-size: 14px;
-        }
-        .project-stats {
-            display: flex;
-            justify-content: space-between;
-            font-size: 12px;
-            color: #666;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>ISYSLAB-HUST Projects</h1>
-        <div class="project">
-            <div class="project-title">DNA storage in life with RaptorQ</div>
-            <div class="project-info">Language: Python</div>
-            <div class="project-info">License: MIT</div>
-            <div class="project-info">Stars: 0</div>
-            <div class="project-info">Updated: Oct 23, 2024</div>
-        </div>
-        <div class="project">
-            <div class="project-title">DeepNeuropePred</div>
-            <div class="project-info">Language: Python</div>
-            <div class="project-info">License: MIT</div>
-            <div class="project-info">Stars: 1</div>
-            <div class="project-info">Updated: Nov 2, 2023</div>
-        </div>
-        <div class="project">
-            <div class="project-title">topology prediction of alpha-helical transmembrane proteins</div>
-            <div class="project-info">Language: Jupyter Notebook</div>
-            <div class="project-info">License: MIT</div>
-            <div class="project-info">Stars: 0</div>
-            <div class="project-info">Updated: Feb 1, 2024</div>
-        </div>
-        <div class="project">
-            <div class="project-title">protein domain prediction</div>
-            <div class="project-info">Language: Python</div>
-            <div class="project-info">License: MIT</div>
-            <div class="project-info">Stars: 0</div>
-            <div class="project-info">Updated: Jun 13, 2022</div>
-        </div>
-        <div class="project">
-            <div class="project-title">neuropeptide prediction</div>
-            <div class="project-info">Language: Python</div>
-            <div class="project-info">License: MIT</div>
-            <div class="project-info">Stars: 1</div>
-            <div class="project-info">Updated: Sep 2, 2022</div>
-        </div>
-        <div class="project">
-            <div class="project-title">ProtFlash: A lightweight protein language model</div>
-            <div class="project-info">Language: Python</div>
-            <div class="project-info">License: MIT</div>
-            <div class="project-info">Stars: 99</div>
-            <div class="project-info">Updated: Oct 15, 2024</div>
-        </div>
-        <!-- Add more projects here -->
+---
+layout: default
+subtitle: Isyslab Lab at Huazhong University of Science and Technology
+
+---
+
+<div class="container">
+	<div class="row" style="margin-top: 0.5rem;text-align:center;">
+        <h1>
+		Welcome to <span style="color:#e12329;">i</span><span style="color:#3399cc;">Syslab</span> at Huazhong University of Science and Technology 
+		</h1>
+        
     </div>
-</body>
-</html>
+
+    <div class="row">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">  
+		
+          <!-- <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          </ol> -->
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 25rem">
+              <img src="assets/img/isyslab.png" class="d-block ma-auto w-100">
+            </div>
+			<!--
+             <div class="carousel-item" style="height: 25rem">
+              <img src="/assets/img/lab.jpg" class="d-block w-100">
+            </div> 
+			-->
+          </div>
+          <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a> -->
+        </div>
+    </div> 
+
+    <div class="row" style="margin-top: 1.5rem;">
+        <h2>Research Interests</h2>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="research-list">
+                <li>Image and Video Processing</li>
+                <li>Virtual Reality and Rehabilitation Games</li>
+                <li>Machine Learning and CUDA Acceleration</li>
+                <li>Algorithm and Software R&D in Bioinformatics</li>
+                <li>Data Processing based on Cloud Platform</li>
+                <li>Protein Structure, Function and Interaction Network Prediction</li>
+                <li>Medical Big Data Analysis</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+.research-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.research-list li {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.research-list li:hover {
+    transform: translateX(10px);
+    background: #e9ecef;
+}
+</style>
