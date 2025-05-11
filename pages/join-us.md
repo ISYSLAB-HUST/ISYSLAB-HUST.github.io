@@ -42,9 +42,6 @@ permalink: /join-us/
 - **Office**: [Office location]
 - **Phone**: [Phone number]
 
-## Open Positions
+## Contact
 
-Excellent post-docs, graduate students, and undergraduate students are welcome to join iSyslab!
-Please send your CV to Prof. Zhidong XUE (zdxue@isyslab.org).
-
-The annual salary for post-docs starts at RMB 200,000. Outstanding candidates are welcome! 
+Excellent post-docs, graduate students and undergraduate students interested in the related research and projects of isyslab are always encouraged to apply, by sending an email to Prof. Zhidong XUE at zdxue@hust.edu.cn.
