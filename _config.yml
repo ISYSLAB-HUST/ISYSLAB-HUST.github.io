@@ -2,7 +2,6 @@ title: iSyslab
 author: ISYSLAB-HUST
 navbar-links:
   Home: "/"
-  Projects: "/projects"
   People: "/people"
   Publications: "/publications"
   Software: "/software"
@@ -82,6 +81,8 @@ defaults:
       layout: "page"
 
 exclude:
+  # Projects is hidden from the public site; retain source for future use.
+  - pages/projects.html
   # Placeholder pages: retain their source until real content is ready.
   - pages/news.md
   - pages/gallery.html
