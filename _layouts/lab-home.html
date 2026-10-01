@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iSyslab — Intelligent Software Systems at HUST</title>
+  <meta name="description" content="iSyslab at Huazhong University of Science and Technology. Research in machine learning, bioinformatics, and intelligent software systems.">
+  <link rel="canonical" href="{{ '/' | absolute_url }}">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/img/isyslab-mark.svg' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/lab.css' | relative_url }}">
+</head>
+<body class="lab-home">
+  <a class="lab-skip" href="#main-content">Skip to content</a>
+  {% include nav.html %}
+  {{ content }}
+  <footer class="lab-footer"><div class="lab-wrap"><div><strong>iSyslab · HUST</strong><p>Huazhong University of Science and Technology</p></div><div><a href="mailto:zdxue@hust.edu.cn">Contact us ↗</a><a href="https://github.com/ISYSLAB-HUST">GitHub ↗</a><span>© {{ site.time | date: '%Y' }} ISYSLAB-HUST</span></div></div></footer>
+</body>
+</html>

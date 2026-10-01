@@ -4,6 +4,7 @@ title: Join Us
 permalink: /join-us/
 ---
 
+{% comment %}Unverified positions and placeholder fields are hidden until updated.
 ## Open Positions
 
 ### Postdoctoral Researchers
@@ -41,6 +42,8 @@ permalink: /join-us/
 - **Address**: Huazhong University of Science and Technology
 - **Office**: [Office location]
 - **Phone**: [Phone number]
+
+{% endcomment %}
 
 ## Contact
 

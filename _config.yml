@@ -6,17 +6,16 @@ navbar-links:
   People: "/people"
   Publications: "/publications"
   Software: "/software"
-  News: "/news"
-  Gallery: "/gallery"
   "Join Us": "/join-us"
 
-title-img: "assets/img/isyslab.png"
+title-img: "assets/img/isyslab-wordmark.svg"
+site-css:
+  - "/assets/css/lab.css"
 round-avatar: true
 
 social-network-links:
   email: "zdxue@hust.edu.cn"
   github: ISYSLAB-HUST
-  google-scholar:
   rss: false
 
 rss-description: "iSyslab is a multidisciplinary research group focusing on intelligent software systems."
@@ -35,7 +34,7 @@ title-on-all-pages: true
 excerpt_length: 50
 feed_show_excerpt: true
 feed_show_tags: true
-post_search: true
+post_search: false
 edit_page_button: false
 navbar-var-length: false
 
@@ -83,6 +82,9 @@ defaults:
       layout: "page"
 
 exclude:
+  # Placeholder pages: retain their source until real content is ready.
+  - pages/news.md
+  - pages/gallery.html
   - _site
   - .jekyll-cache
   - Gemfile.lock
