@@ -2,6 +2,7 @@
 layout: new
 title: Join Us
 permalink: /join-us/
+share-description: Contact iSyslab at Huazhong University of Science and Technology to discuss research interests and opportunities.
 ---
 
 {% comment %}Unverified positions and placeholder fields are hidden until updated.
