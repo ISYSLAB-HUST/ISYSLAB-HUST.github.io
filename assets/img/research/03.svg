@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 480" font-family="Inter, 'Noto Sans SC', sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7FAFD"/>
+      <stop offset="1" stop-color="#EBF1F8"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1E3A5F"/>
+      <stop offset="1" stop-color="#0F2438"/>
+    </linearGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#C9D6E4" opacity="0.55"/>
+    </pattern>
+  </defs>
+
+  <rect width="840" height="480" fill="url(#bg)"/>
+  <rect width="840" height="480" fill="url(#dots)"/>
+  <circle cx="700" cy="110" r="150" fill="#2E7BF6" opacity="0.06"/>
+  <circle cx="130" cy="400" r="130" fill="#0FA8A0" opacity="0.07"/>
+
+  <!-- eyebrow -->
+  <text x="42" y="58" font-size="15" font-weight="700" letter-spacing="3" fill="#8AA0B8">03 · VISUAL COMPUTING</text>
+  <rect x="42" y="68" width="44" height="3" rx="1.5" fill="#2E7BF6"/>
+
+  <!-- ============ left: ultrasound scan with detection ============ -->
+  <g>
+    <rect x="46" y="104" width="212" height="252" rx="14" fill="url(#scan)"/>
+    <!-- sector scan lines -->
+    <g stroke="#3E6E9E" stroke-width="1" opacity="0.7">
+      <path d="M152 340 L 84 130"/>
+      <path d="M152 340 L 122 122"/>
+      <path d="M152 340 L 152 118"/>
+      <path d="M152 340 L 182 122"/>
+      <path d="M152 340 L 220 130"/>
+    </g>
+    <g fill="#6FA8E8" opacity="0.45">
+      <ellipse cx="128" cy="220" rx="26" ry="40" transform="rotate(-18 128 220)"/>
+      <ellipse cx="176" cy="258" rx="20" ry="34" transform="rotate(12 176 258)"/>
+    </g>
+    <g fill="#9CC4EE" opacity="0.5">
+      <ellipse cx="150" cy="180" rx="14" ry="22"/>
+      <ellipse cx="190" cy="210" rx="10" ry="16"/>
+    </g>
+    <!-- muscle layer band -->
+    <path d="M70 300 Q 152 278 234 300 L 234 318 Q 152 298 70 318 Z" fill="#4C86C6" opacity="0.55"/>
+    <!-- detection box + label -->
+    <rect x="106" y="188" width="86" height="72" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-dasharray="none" rx="3"/>
+    <g>
+      <rect x="106" y="170" width="86" height="18" rx="3" fill="#4ADE80"/>
+      <text x="149" y="183" font-size="11" font-weight="700" fill="#0B3B2A" text-anchor="middle">strain 0.93</text>
+    </g>
+    <!-- probe marker -->
+    <path d="M152 340 l0 0" />
+    <text x="152" y="378" font-size="12.5" font-weight="700" fill="#5B6B80" text-anchor="middle" letter-spacing="1.5">ULTRASOUND · MS-DETECTOR</text>
+  </g>
+
+  <!-- flow -->
+  <path d="M268 228 C 292 228, 296 228, 314 228" stroke="#2E7BF6" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M318 228 l-9 -5 m9 5 l-9 5" stroke="#2E7BF6" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- ============ center: deep net + video strip + SLAM map ============ -->
+  <!-- deep model -->
+  <g transform="translate(324,112)">
+    <rect x="0" y="0" width="150" height="118" rx="14" fill="#FFFFFF" stroke="#C9D6E4"/>
+    <text x="14" y="24" font-size="11.5" font-weight="700" fill="#8AA0B8" letter-spacing="1.5">DEEP MODEL</text>
+    <g fill="#2E7BF6">
+      <circle cx="34" cy="52" r="7"/>
+      <circle cx="34" cy="88" r="7"/>
+      <circle cx="76" cy="46" r="7"/>
+      <circle cx="76" cy="70" r="7"/>
+      <circle cx="76" cy="94" r="7"/>
+      <circle cx="118" cy="58" r="7"/>
+      <circle cx="118" cy="86" r="7"/>
+    </g>
+    <g stroke="#B9CFEA" stroke-width="1.6">
+      <path d="M41 54 L 69 48"/><path d="M41 54 L 69 70"/><path d="M41 88 L 69 70"/><path d="M41 88 L 69 94"/>
+      <path d="M83 46 L 111 58"/><path d="M83 70 L 111 58"/><path d="M83 70 L 111 86"/><path d="M83 94 L 111 86"/>
+    </g>
+  </g>
+  <!-- video frame strip -->
+  <g transform="translate(324,258)">
+    <rect x="0" y="0" width="150" height="46" rx="10" fill="#FFFFFF" stroke="#C9D6E4"/>
+    <g>
+      <rect x="8" y="8" width="40" height="30" rx="4" fill="#D7E5F4"/>
+      <rect x="54" y="8" width="40" height="30" rx="4" fill="#C3D8EE"/>
+      <rect x="100" y="8" width="40" height="30" rx="4" fill="#AFCAE8"/>
+    </g>
+    <path d="M20 23 h16 m-5 -5 5 5 -5 5" stroke="#2E7BF6" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M66 23 h16 m-5 -5 5 5 -5 5" stroke="#2E7BF6" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="75" y="64" font-size="11.5" fill="#8AA0B8" text-anchor="middle" font-weight="600">tracking · stitching</text>
+  </g>
+
+  <!-- ============ right: SLAM feature map + DNA storage ============ -->
+  <!-- SLAM map -->
+  <g transform="translate(520,104)">
+    <rect x="0" y="0" width="270" height="150" rx="14" fill="#FFFFFF" stroke="#C9D6E4"/>
+    <text x="14" y="24" font-size="11.5" font-weight="700" fill="#8AA0B8" letter-spacing="1.5">VISUAL SLAM · FEATURE MAP</text>
+    <!-- camera trajectory -->
+    <path d="M30 116 C 70 96, 96 118, 130 88 S 200 66, 238 78" stroke="#2E7BF6" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <!-- keyframes -->
+    <g fill="#FFFFFF" stroke="#2E7BF6" stroke-width="1.8">
+      <rect x="22" y="108" width="16" height="16" rx="3"/>
+      <rect x="122" y="80" width="16" height="16" rx="3"/>
+      <rect x="230" y="70" width="16" height="16" rx="3"/>
+    </g>
+    <!-- landmarks -->
+    <g fill="#0FA8A0">
+      <circle cx="76" cy="62" r="3.5"/><circle cx="108" cy="44" r="3.5"/><circle cx="150" cy="52" r="3.5"/>
+      <circle cx="184" cy="100" r="3.5"/><circle cx="210" cy="120" r="3.5"/><circle cx="60" cy="90" r="3.5"/>
+    </g>
+    <!-- covisible lines -->
+    <g stroke="#C9D6E4" stroke-width="1">
+      <path d="M30 116 L 76 62"/><path d="M130 88 L 108 44"/><path d="M138 88 L 150 52"/><path d="M238 78 L 210 120"/>
+    </g>
+  </g>
+  <!-- DNA storage -->
+  <g transform="translate(520,278)">
+    <rect x="0" y="0" width="270" height="86" rx="14" fill="#FFFFFF" stroke="#C9D6E4"/>
+    <text x="14" y="24" font-size="11.5" font-weight="700" fill="#8AA0B8" letter-spacing="1.5">DNA IMAGE STORAGE</text>
+    <!-- mini helix -->
+    <g stroke="#0FA8A0" stroke-width="2.2" fill="none">
+      <path d="M60 40 C 72 40, 72 66, 84 66 S 96 40, 108 40 S 120 66, 132 66"/>
+      <path d="M60 66 C 72 66, 72 40, 84 40 S 96 66, 108 66 S 120 40, 132 40" opacity="0.55"/>
+    </g>
+    <g stroke="#9BC9C3" stroke-width="1.8">
+      <path d="M63 44 H 63" /><path d="M72 52 V 56"/><path d="M84 53 V 53"/><path d="M96 56 V 52"/><path d="M108 53 V 53"/><path d="M120 52 V 56"/><path d="M129 44 H 129"/>
+    </g>
+    <!-- encoded pixels -->
+    <g>
+      <rect x="168" y="38" width="12" height="12" rx="2" fill="#0FA8A0"/>
+      <rect x="184" y="38" width="12" height="12" rx="2" fill="#AFD9D4"/>
+      <rect x="200" y="38" width="12" height="12" rx="2" fill="#0FA8A0"/>
+      <rect x="168" y="54" width="12" height="12" rx="2" fill="#AFD9D4"/>
+      <rect x="184" y="54" width="12" height="12" rx="2" fill="#0FA8A0"/>
+      <rect x="200" y="54" width="12" height="12" rx="2" fill="#AFD9D4"/>
+    </g>
+    <path d="M150 53 H 162" stroke="#8AA0B8" stroke-width="2" stroke-linecap="round"/>
+    <path d="M226 53 H 238 m-4 -4 4 4 -4 4" stroke="#8AA0B8" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="246" y="57" font-size="12" font-weight="700" fill="#0E9488">A·C·G·T</text>
+  </g>
+
+  <!-- LIBS spectrum bottom-left -->
+  <g transform="translate(46,382)">
+    <rect x="0" y="0" width="270" height="72" rx="12" fill="#FFFFFF" stroke="#C9D6E4"/>
+    <text x="14" y="22" font-size="11.5" font-weight="700" fill="#8AA0B8" letter-spacing="1.5">LIBS · Pb SCREENING</text>
+    <path d="M14 56 H 252" stroke="#C9D6E4" stroke-width="1.6"/>
+    <g stroke="#2E7BF6" stroke-width="2.2" stroke-linecap="round">
+      <path d="M46 56 V 34"/><path d="M78 56 V 42"/><path d="M112 56 V 30"/><path d="M150 56 V 44"/><path d="M186 56 V 26"/><path d="M222 56 V 38"/>
+    </g>
+    <path d="M186 26 l-3 8 h6 z" fill="#E8590C"/>
+  </g>
+</svg>

@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 480" font-family="Inter, 'Noto Sans SC', sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7FAFD"/>
+      <stop offset="1" stop-color="#EBF1F8"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8B6CFF"/>
+      <stop offset="1" stop-color="#6A4BE8"/>
+    </linearGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#C9D6E4" opacity="0.55"/>
+    </pattern>
+  </defs>
+
+  <rect width="840" height="480" fill="url(#bg)"/>
+  <rect width="840" height="480" fill="url(#dots)"/>
+  <circle cx="700" cy="80" r="150" fill="#7C5CFC" opacity="0.06"/>
+  <circle cx="120" cy="420" r="130" fill="#2E7BF6" opacity="0.06"/>
+
+  <!-- eyebrow -->
+  <text x="42" y="58" font-size="15" font-weight="700" letter-spacing="3" fill="#8AA0B8">01 · LLM &amp; AGENTS</text>
+  <rect x="42" y="68" width="44" height="3" rx="1.5" fill="#7C5CFC"/>
+
+  <!-- ============ left: prompt tokens ============ -->
+  <g font-size="14" font-weight="600" text-anchor="middle">
+    <rect x="48" y="150" width="92" height="34" rx="17" fill="#FFFFFF" stroke="#C9D6E4"/>
+    <text x="94" y="172" fill="#33475E">prompt</text>
+    <rect x="64" y="200" width="76" height="34" rx="17" fill="#FFFFFF" stroke="#C9D6E4"/>
+    <text x="102" y="222" fill="#33475E">query</text>
+    <rect x="48" y="250" width="92" height="34" rx="17" fill="#FFFFFF" stroke="#C9D6E4"/>
+    <text x="94" y="272" fill="#33475E">context</text>
+  </g>
+
+  <!-- flow arrows into model -->
+  <g stroke="#7C5CFC" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M148 167 C 190 167, 205 200, 238 212"/>
+    <path d="M146 217 C 185 217, 200 220, 236 224"/>
+    <path d="M148 267 C 190 267, 205 244, 238 236"/>
+  </g>
+  <path d="M238 224 l-10 -5 m10 5 l-11 4" stroke="#7C5CFC" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- ============ center: LLM stack ============ -->
+  <rect x="248" y="140" width="190" height="170" rx="20" fill="url(#core)"/>
+  <rect x="248" y="140" width="190" height="170" rx="20" fill="none" stroke="#5B3DD6" stroke-opacity="0.5"/>
+  <!-- transformer layers -->
+  <g fill="#FFFFFF" opacity="0.92">
+    <rect x="272" y="168" width="142" height="20" rx="10"/>
+    <rect x="272" y="200" width="142" height="20" rx="10" opacity="0.8"/>
+    <rect x="272" y="232" width="142" height="20" rx="10" opacity="0.62"/>
+    <rect x="272" y="264" width="142" height="20" rx="10" opacity="0.45"/>
+  </g>
+  <text x="343" y="132" font-size="20" font-weight="800" fill="#33475E" text-anchor="middle">LLM</text>
+  <!-- attention arcs -->
+  <g stroke="#B49CFF" stroke-width="2" fill="none" opacity="0.9">
+    <path d="M270 158 Q 343 118 416 158"/>
+    <path d="M282 148 Q 343 116 404 148" opacity="0.6"/>
+  </g>
+
+  <!-- RAG retrieval loop (top right of model) -->
+  <g>
+    <rect x="500" y="96" width="130" height="52" rx="12" fill="#FFFFFF" stroke="#7C5CFC" stroke-width="1.6"/>
+    <ellipse cx="522" cy="118" rx="10" ry="4.5" fill="none" stroke="#7C5CFC" stroke-width="1.8"/>
+    <path d="M512 118 v12 a10 4.5 0 0 0 20 0 v-12" fill="none" stroke="#7C5CFC" stroke-width="1.8"/>
+    <path d="M528 112 h84 M528 120 h84 M528 128 h60" stroke="#C9D6E4" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="565" y="168" font-size="12.5" font-weight="700" fill="#7C5CFC" text-anchor="middle" letter-spacing="1.5">RETRIEVAL · RAG</text>
+    <path d="M500 122 C 460 128, 448 150, 442 168" stroke="#7C5CFC" stroke-width="2.2" fill="none" stroke-dasharray="5 5" stroke-linecap="round"/>
+    <path d="M442 168 l-2 -10 m2 10 l9 -4" stroke="#7C5CFC" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- ============ right: agent & tools ============ -->
+  <path d="M438 224 C 480 224, 490 220, 520 220" stroke="#2E7BF6" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <circle cx="548" cy="220" r="26" fill="#2E7BF6"/>
+  <text x="548" y="226" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">Agent</text>
+  <g stroke="#2E7BF6" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M566 204 C 606 178, 622 168, 648 158"/>
+    <path d="M574 220 C 612 220, 624 220, 650 220"/>
+    <path d="M566 236 C 606 262, 622 272, 648 282"/>
+  </g>
+  <!-- tool nodes -->
+  <g>
+    <circle cx="682" cy="150" r="24" fill="#FFFFFF" stroke="#C9D6E4"/>
+    <circle cx="676" cy="145" r="8" fill="none" stroke="#2E7BF6" stroke-width="2.2"/>
+    <path d="M682 151 l7 7" stroke="#2E7BF6" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="682" y="190" font-size="11.5" fill="#8AA0B8" text-anchor="middle" font-weight="600">search</text>
+  </g>
+  <g>
+    <rect x="656" y="204" width="52" height="34" rx="9" fill="#FFFFFF" stroke="#C9D6E4"/>
+    <path d="M666 214 h32 M666 222 h32 M666 230 h20" stroke="#2E7BF6" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="682" y="258" font-size="11.5" fill="#8AA0B8" text-anchor="middle" font-weight="600">docs</text>
+  </g>
+  <g>
+    <circle cx="682" cy="292" r="24" fill="#FFFFFF" stroke="#C9D6E4"/>
+    <path d="M672 292 l7 8 14 -16" stroke="#2E7BF6" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="682" y="332" font-size="11.5" fill="#8AA0B8" text-anchor="middle" font-weight="600">planning</text>
+  </g>
+
+  <!-- ============ bottom: capability chips ============ -->
+  <g font-size="12.5" font-weight="700" text-anchor="middle">
+    <rect x="248" y="360" width="118" height="30" rx="15" fill="#FFFFFF" stroke="#C9D6E4"/>
+    <text x="307" y="379" fill="#5B6B80">Fine-tuning</text>
+    <rect x="382" y="360" width="128" height="30" rx="15" fill="#FFFFFF" stroke="#7C5CFC"/>
+    <text x="446" y="379" fill="#7C5CFC">Hallucination ctrl</text>
+    <rect x="526" y="360" width="130" height="30" rx="15" fill="#FFFFFF" stroke="#C9D6E4"/>
+    <text x="591" y="379" fill="#5B6B80">Evaluation</text>
+    <rect x="672" y="360" width="126" height="30" rx="15" fill="#FFFFFF" stroke="#C9D6E4"/>
+    <text x="735" y="379" fill="#5B6B80">ProtFlash · LMs</text>
+  </g>
+
+  <!-- output arrow bottom-left of model -->
+  <path d="M343 310 C 343 336, 343 336, 343 352" stroke="#7C5CFC" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M343 356 l-5 -9 m5 9 l5 -9" stroke="#7C5CFC" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>

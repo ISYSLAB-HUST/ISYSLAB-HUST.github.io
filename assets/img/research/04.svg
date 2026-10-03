@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 480" font-family="Inter, 'Noto Sans SC', sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7FAFD"/>
+      <stop offset="1" stop-color="#EBF1F8"/>
+    </linearGradient>
+    <linearGradient id="plm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#14B88A"/>
+      <stop offset="1" stop-color="#0B8F6A"/>
+    </linearGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#C9D6E4" opacity="0.55"/>
+    </pattern>
+  </defs>
+
+  <rect width="840" height="480" fill="url(#bg)"/>
+  <rect width="840" height="480" fill="url(#dots)"/>
+  <circle cx="130" cy="110" r="150" fill="#0E9F6E" opacity="0.06"/>
+  <circle cx="730" cy="400" r="140" fill="#7C5CFC" opacity="0.06"/>
+
+  <!-- eyebrow -->
+  <text x="42" y="58" font-size="15" font-weight="700" letter-spacing="3" fill="#8AA0B8">04 · PROTEIN PREDICTION &amp; SOFTWARE</text>
+  <rect x="42" y="68" width="44" height="3" rx="1.5" fill="#0E9F6E"/>
+
+  <!-- ============ left: amino-acid sequence tokens ============ -->
+  <g transform="translate(46,110)" font-size="12.5" font-weight="700" text-anchor="middle">
+    <g>
+      <rect x="0" y="0" width="34" height="34" rx="8" fill="#FFFFFF" stroke="#C9D6E4"/><text x="17" y="23" fill="#0E9F6E">M</text>
+      <rect x="40" y="0" width="34" height="34" rx="8" fill="#FFFFFF" stroke="#C9D6E4"/><text x="57" y="23" fill="#33475E">K</text>
+      <rect x="80" y="0" width="34" height="34" rx="8" fill="#FFFFFF" stroke="#C9D6E4"/><text x="97" y="23" fill="#33475E">T</text>
+      <rect x="120" y="0" width="34" height="34" rx="8" fill="#FFFFFF" stroke="#C9D6E4"/><text x="137" y="23" fill="#33475E">A</text>
+      <rect x="160" y="0" width="34" height="34" rx="8" fill="#FFFFFF" stroke="#C9D6E4"/><text x="177" y="23" fill="#0E9F6E">V</text>
+      <text x="216" y="23" font-size="16" fill="#8AA0B8">…</text>
+    </g>
+    <g>
+      <rect x="0" y="42" width="34" height="34" rx="8" fill="#FFFFFF" stroke="#C9D6E4"/><text x="17" y="65" fill="#33475E">E</text>
+      <rect x="40" y="42" width="34" height="34" rx="8" fill="#FFFFFF" stroke="#C9D6E4"/><text x="57" y="65" fill="#0E9F6E">L</text>
+      <rect x="80" y="42" width="34" height="34" rx="8" fill="#FFFFFF" stroke="#C9D6E4"/><text x="97" y="65" fill="#33475E">G</text>
+      <rect x="120" y="42" width="34" height="34" rx="8" fill="#FFFFFF" stroke="#C9D6E4"/><text x="137" y="65" fill="#33475E">S</text>
+      <rect x="160" y="42" width="34" height="34" rx="8" fill="#FFFFFF" stroke="#C9D6E4"/><text x="177" y="65" fill="#33475E">D</text>
+      <text x="216" y="65" font-size="16" fill="#8AA0B8">…</text>
+    </g>
+  </g>
+  <text x="150" y="212" font-size="12.5" font-weight="700" fill="#5B6B80" text-anchor="middle" letter-spacing="1.5">SEQUENCE</text>
+
+  <!-- flow -->
+  <path d="M150 236 V 262" stroke="#0E9F6E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M150 266 l-5 -9 m5 9 l5 -9" stroke="#0E9F6E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- ============ center: PLM transformer ============ -->
+  <g transform="translate(58,268)">
+    <rect x="0" y="0" width="184" height="120" rx="16" fill="url(#plm)"/>
+    <text x="92" y="30" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">PROTEIN LM</text>
+    <g fill="#FFFFFF" opacity="0.9">
+      <rect x="20" y="46" width="144" height="12" rx="6"/>
+      <rect x="20" y="66" width="144" height="12" rx="6" opacity="0.7"/>
+      <rect x="20" y="86" width="144" height="12" rx="6" opacity="0.5"/>
+    </g>
+    <!-- self-attention arcs -->
+    <g stroke="#A9F0D6" stroke-width="1.8" fill="none" opacity="0.9">
+      <path d="M26 42 Q 92 16 158 42"/>
+      <path d="M36 34 Q 92 12 148 34" opacity="0.6"/>
+    </g>
+  </g>
+  <text x="150" y="412" font-size="12.5" font-weight="700" fill="#5B6B80" text-anchor="middle" letter-spacing="1.5">ProtFlash · ProtSSSD</text>
+
+  <!-- flow to structure -->
+  <path d="M252 328 C 286 328, 296 300, 326 286" stroke="#0E9F6E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M330 284 l-10 0 m10 0 l-6 8" stroke="#0E9F6E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- ============ right: predicted 3D structure ============ -->
+  <g transform="translate(340,96)">
+    <rect x="0" y="0" width="240" height="290" rx="18" fill="#FFFFFF" stroke="#C9D6E4"/>
+    <text x="120" y="30" font-size="12" font-weight="700" fill="#8AA0B8" text-anchor="middle" letter-spacing="1.5">STRUCTURE PREDICTION</text>
+    <!-- alpha helix -->
+    <g stroke="#0E9F6E" stroke-width="3" fill="none" stroke-linecap="round">
+      <path d="M46 92 C 60 66, 84 66, 90 88 C 96 110, 72 122, 62 104"/>
+      <path d="M62 104 C 52 88, 70 74, 80 84"/>
+    </g>
+    <!-- beta sheet arrows -->
+    <g fill="#14B88A">
+      <path d="M116 78 l34 0 l0 -8 l16 14 l-16 14 l0 -8 l-34 0 z"/>
+      <path d="M116 122 l34 0 l0 -8 l16 14 l-16 14 l0 -8 l-34 0 z" opacity="0.75"/>
+    </g>
+    <!-- loops -->
+    <path d="M90 88 C 104 84, 110 82, 116 84" stroke="#7DD8B7" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M166 128 C 176 148, 156 168, 136 158 S 108 136, 118 120" stroke="#0E9F6E" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- binding site highlight -->
+    <circle cx="136" cy="158" r="26" fill="none" stroke="#7C5CFC" stroke-width="2" stroke-dasharray="5 5"/>
+    <circle cx="136" cy="158" r="6" fill="#7C5CFC"/>
+    <text x="176" y="176" font-size="11.5" font-weight="700" fill="#7C5CFC">site</text>
+    <!-- alignment bar predicted vs native -->
+    <g transform="translate(20,206)">
+      <text x="0" y="0" font-size="10.5" fill="#8AA0B8" font-weight="700">pLDDT</text>
+      <rect x="46" y="-10" width="158" height="12" rx="6" fill="#E4F5EE"/>
+      <rect x="46" y="-10" width="118" height="12" rx="6" fill="#14B88A"/>
+      <rect x="46" y="-10" width="86" height="12" rx="6" fill="#0B8F6A"/>
+      <g stroke="#FFFFFF" stroke-width="0">
+      </g>
+    </g>
+    <text x="120" y="266" font-size="12.5" font-weight="700" fill="#5B6B80" text-anchor="middle" letter-spacing="1">TM-score · GDT · SITE F1</text>
+  </g>
+
+  <!-- ============ far right: tools & servers ============ -->
+  <g transform="translate(616,96)">
+    <rect x="0" y="0" width="182" height="290" rx="18" fill="#FFFFFF" stroke="#C9D6E4"/>
+    <text x="91" y="30" font-size="12" font-weight="700" fill="#8AA0B8" text-anchor="middle" letter-spacing="1.5">SOFTWARE · SERVERS</text>
+    <!-- NeuroPep db -->
+    <g transform="translate(20,50)">
+      <ellipse cx="24" cy="10" rx="22" ry="8" fill="none" stroke="#0E9F6E" stroke-width="2"/>
+      <path d="M2 10 v24 a22 8 0 0 0 44 0 v-24" fill="none" stroke="#0E9F6E" stroke-width="2"/>
+      <text x="56" y="16" font-size="12" font-weight="700" fill="#33475E">NeuroPep</text>
+      <text x="56" y="31" font-size="9.8" fill="#8AA0B8">neuropeptide database</text>
+    </g>
+    <!-- web server -->
+    <g transform="translate(20,114)">
+      <rect x="0" y="0" width="44" height="36" rx="8" fill="none" stroke="#0E9F6E" stroke-width="2"/>
+      <path d="M9 11 h26 M9 18 h26 M9 25 h16" stroke="#0E9F6E" stroke-width="2" stroke-linecap="round"/>
+      <text x="56" y="12" font-size="12" font-weight="700" fill="#33475E">Web servers</text>
+      <text x="56" y="26" font-size="9.8" fill="#8AA0B8">NeuroPred-PLM</text>
+      <text x="56" y="38" font-size="9.8" fill="#8AA0B8">DeepNeuropePred</text>
+    </g>
+    <!-- open source -->
+    <g transform="translate(20,180)">
+      <circle cx="22" cy="18" r="16" fill="none" stroke="#7C5CFC" stroke-width="2.2"/>
+      <circle cx="22" cy="11" r="4.5" fill="none" stroke="#7C5CFC" stroke-width="2"/>
+      <path d="M17.5 27 a7 7 0 0 1 9 0" fill="none" stroke="#7C5CFC" stroke-width="2"/>
+      <text x="56" y="12" font-size="12" font-weight="700" fill="#33475E">Open source</text>
+      <text x="56" y="26" font-size="9.8" fill="#8AA0B8">pmTM-align · Spark</text>
+      <text x="56" y="38" font-size="9.8" fill="#8AA0B8">ThreaDomEx · I-TASSER</text>
+    </g>
+    <!-- design -->
+    <g transform="translate(20,246)">
+      <path d="M4 32 L 16 6 a4 4 0 0 1 7 0 L 35 32 z" fill="none" stroke="#0E9F6E" stroke-width="2"/>
+      <circle cx="19.5" cy="23" r="3.5" fill="#0E9F6E"/>
+      <text x="56" y="12" font-size="12" font-weight="700" fill="#33475E">AI protein design</text>
+      <text x="56" y="26" font-size="9.8" fill="#8AA0B8">drug-target discovery</text>
+    </g>
+  </g>
+
+  <!-- peptide ribbon connector -->
+  <path d="M340 380 C 310 380, 300 396, 276 396" stroke="#7C5CFC" stroke-width="2" fill="none" stroke-dasharray="4 4" stroke-linecap="round"/>
+  <text x="150" y="446" font-size="11.5" fill="#8AA0B8" text-anchor="middle" font-weight="600">Neuropeptide · PPI · RNA — SPLiNet · StraPep</text>
+</svg>

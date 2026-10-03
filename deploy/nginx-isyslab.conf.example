@@ -1,0 +1,54 @@
+# iSyslab 实验室网站 —— Nginx 站点配置（独立域名根目录）
+#
+# 用法：
+#   1) 把本文件改好后上传到 /etc/nginx/conf.d/isyslab.conf
+#      （具体位置看发行版：Debian/Ubuntu 常为 /etc/nginx/sites-available/ + sites-enabled/ 软链）
+#   2) 改这两处：server_name、root
+#   3) 检查并重载：sudo nginx -t && sudo systemctl reload nginx
+#
+# HTTPS 用一条命令签发（会自动改好本配置）：
+#   sudo certbot --nginx -d isyslab.example.edu.cn
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name isyslab.example.edu.cn;      # ← 换成你的域名
+
+    root /var/www/isyslab;                   # ← index.html 所在的目录
+    index index.html;
+
+    # 站点是纯静态的，找不到的路径直接 404
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    # HTML 不缓存：改完内容刷新就能看到最新版
+    location ~* \.html$ {
+        add_header Cache-Control "no-cache, must-revalidate";
+    }
+
+    # 静态资源长缓存：这些文件很少变，命中缓存能明显提速
+    location ~* \.(css|js|svg|png|jpe?g|webp|ico|woff2?)$ {
+        expires 30d;
+        add_header Cache-Control "public, immutable";
+        access_log off;
+    }
+
+    # 压缩（本站以文本为主，压缩后首屏明显更快）
+    gzip on;
+    gzip_comp_level 5;
+    gzip_min_length 1024;
+    gzip_types text/plain text/css text/html application/javascript
+               application/json image/svg+xml;
+
+    # 隐藏 Nginx 版本号
+    server_tokens off;
+
+    # 安全响应头（纯静态站，这几条没有副作用）
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header X-Frame-Options "SAMEORIGIN" always;
+    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+
+    # 没有 404 页面就不写这行（本站暂未提供 404.html）
+    # error_page 404 /404.html;
+}

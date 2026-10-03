@@ -1,0 +1,5 @@
+{
+  "host": "root@你的服务器地址",
+  "port": 22,
+  "path": "/var/www/isyslab"
+}

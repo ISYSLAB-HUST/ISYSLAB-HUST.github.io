@@ -1,33 +1,117 @@
----
-layout: lab-home
-title: Home
----
-<main id="main-content">
-  <section class="lab-hero lab-wrap">
-    <div>
-      <p class="lab-eyebrow">Bioinformatics Research</p>
-      <h1>Exploring biology<br><em>through computation.</em></h1>
-      <p class="lab-intro">Our research spans protein and RNA structure prediction, protein language models, and multi-agent methods for bioinformatics.</p>
-      <div class="lab-actions"><a class="lab-button" href="#research">Research interests <span aria-hidden="true">↓</span></a><a class="lab-text-link" href="{{ '/publications/' | relative_url }}">Read our publications →</a></div>
-    </div>
-    <div class="lab-visual">
-      <div class="lab-visual-meta"><span>PROTEINS &amp; RNA</span><span>COMPUTATION</span></div>
-      <svg viewBox="0 0 440 320" aria-hidden="true">
-        <g stroke="#d2e0d9" stroke-width="1"><path d="M0 80h440M0 160h440M0 240h440M70 0v320M150 0v320M230 0v320M310 0v320M390 0v320"/><circle cx="230" cy="160" r="122" fill="none"/><circle cx="230" cy="160" r="82" fill="none"/></g>
-        <g fill="none" stroke="#287261" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M56 212L114 161L169 190L222 105L295 130L353 72M114 161L139 74L222 105L244 233L169 190L195 278M244 233L337 222L295 130L388 164M337 222L370 278"/><path d="M56 212L98 262L169 190" stroke="#97b9ac"/></g>
-        <g fill="#edf3f0" stroke="#287261" stroke-width="3"><circle cx="56" cy="212" r="8"/><circle cx="139" cy="74" r="8"/><circle cx="169" cy="190" r="9"/><circle cx="244" cy="233" r="10"/><circle cx="337" cy="222" r="7"/><circle cx="353" cy="72" r="7"/><circle cx="388" cy="164" r="6"/><circle cx="195" cy="278" r="6"/><circle cx="98" cy="262" r="5"/><circle cx="370" cy="278" r="5"/></g>
-        <g fill="#132d3b"><circle cx="114" cy="161" r="13"/><circle cx="222" cy="105" r="17"/><circle cx="295" cy="130" r="11"/></g>
-      </svg>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>iSyslab · Intelligent Systems Lab, HUST</title>
+<meta name="description" content="iSyslab (Intelligent Systems Laboratory) at HUST develops AI software and applications — pairing algorithm research with real-world scenarios in gaming, bioinformatics and healthcare.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<!-- BUILD:home.strings -->
+<!-- /BUILD:home.strings -->
+<script src="assets/js/i18n.js"></script>
+</head>
+<body data-page="home">
+<div class="shell">
+  <div id="site-navbar"></div>
+
+  <!-- Hero 主视觉 -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h1 class="hero-title" data-i18n="home.hero.title" data-i18n-html>AI Software &amp; Applications,<br>Built for the Real World</h1>
+        <p class="hero-sub">
+          <!-- BUILD:home.intro -->
+          iSyslab (Intelligent Systems Laboratory) at HUST develops AI software and applications — pairing algorithm research with real-world scenarios in gaming, bioinformatics and healthcare.
+          <!-- /BUILD:home.intro -->
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="research.html" data-i18n="home.cta.primary">Explore Our Research</a>
+          <a class="btn btn-secondary" href="publications.html" data-i18n="home.cta.secondary">View Publications</a>
+          <a class="btn btn-ghost" href="join.html" data-i18n="home.cta.join">Join Us</a>
+        </div>
+        <div class="stats">
+          <!-- BUILD:home.stats -->
+<!-- /BUILD:home.stats -->
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-lockup">
+          <img class="hero-mark" src="assets/img/logo-mark-reverse.svg" alt="">
+          <div class="hero-wordmark">
+            <span class="hero-name"><span class="wm-i">i</span>Syslab</span>
+            <span class="hero-tag" data-i18n="brand.sub">Zhidong's Research Group @ HUST</span>
+          </div>
+        </div>
+        <div class="hero-foot">
+          <p data-i18n="home.visual.caption" data-i18n-html>Huazhong University of Science &amp; Technology<br>Wuhan, China</p>
+        </div>
+      </div>
     </div>
   </section>
-  <section class="lab-section lab-wrap" id="research" aria-labelledby="research-title">
-    <div class="lab-section-header"><div><p class="lab-eyebrow">01 / Research</p><h2 id="research-title">Research Interests</h2></div></div>
-    <div class="lab-research-grid">
-      <article class="lab-research"><span class="lab-number">01</span><h3>Protein Structure Prediction</h3><p>Computational methods for predicting three-dimensional protein structures.</p></article>
-      <article class="lab-research"><span class="lab-number">02</span><h3>RNA Structure Prediction</h3><p>Computational methods for predicting RNA secondary and three-dimensional structures.</p></article>
-      <article class="lab-research"><span class="lab-number">03</span><h3>Protein Language Models</h3><p>Language models and representation learning for protein sequences.</p></article>
-      <article class="lab-research"><span class="lab-number">04</span><h3>Multi-Agent Systems</h3><p>Multi-agent methods for bioinformatics research.</p></article>
+
+  <!-- 研究方向区 -->
+  <section class="section-white section-block">
+    <div class="section-head">
+      <div class="title-block">
+        <div class="eyebrow-text" data-i18n="home.res.eyebrow">RESEARCH</div>
+        <h2 class="section-title" data-i18n="home.res.title">Research Interests</h2>
+        <p class="section-sub" data-i18n="home.res.sub">Five directions from large language models and VR to biological macromolecule software and AI security — from algorithms to usable systems.</p>
+      </div>
+      <a class="section-link" href="research.html" data-i18n="home.res.all">All directions →</a>
+    </div>
+    <div class="cards">
+      <!-- BUILD:home.cards -->
+<!-- /BUILD:home.cards -->
     </div>
   </section>
-  <section class="lab-section lab-wrap lab-contact"><div><p class="lab-eyebrow">02 / Contact</p><h2>Contact Us</h2><p>Prof. Zhidong XUE · zdxue@hust.edu.cn</p></div><a class="lab-button" href="mailto:zdxue@hust.edu.cn">Contact the lab <span aria-hidden="true">↗</span></a></section>
-</main>
+
+  <!-- 新闻动态区 -->
+  <section class="section-gray section-block">
+    <div class="section-head tight">
+      <div class="title-block">
+        <div class="eyebrow-text" data-i18n="home.news.eyebrow">NEWS</div>
+        <h2 class="section-title" data-i18n="home.news.title">Latest News</h2>
+      </div>
+      <a class="section-link" href="news.html" data-i18n="home.news.all">All news →</a>
+    </div>
+    <div class="news-list">
+      <!-- BUILD:home.news -->
+<!-- /BUILD:home.news -->
+    </div>
+  </section>
+
+  <!-- 代表性论文区 -->
+  <section class="section-white section-block">
+    <div class="section-head tight">
+      <div class="title-block">
+        <div class="eyebrow-text" data-i18n="home.pub.eyebrow">SELECTED PUBLICATIONS</div>
+        <h2 class="section-title" data-i18n="home.pub.title">Selected Publications</h2>
+      </div>
+      <a class="section-link" href="publications.html" data-i18n="home.pub.all">All publications →</a>
+    </div>
+    <div class="paper-list">
+      <!-- BUILD:home.pubs -->
+<!-- /BUILD:home.pubs -->
+    </div>
+  </section>
+
+  <!-- 招生 CTA 区 -->
+  <section class="cta">
+    <div class="cta-inner">
+      <div class="cta-copy">
+        <h2 data-i18n="home.join.title">Join iSyslab</h2>
+        <p data-i18n="home.join.desc" data-i18n-html>We recruit postdocs, master's &amp; PhD students and undergraduate researchers year-round. Postdoc salary starts from RMB 200,000/year.</p>
+      </div>
+      <a class="cta-btn" href="join.html" data-i18n="home.join.btn">View Open Positions</a>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+</div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
